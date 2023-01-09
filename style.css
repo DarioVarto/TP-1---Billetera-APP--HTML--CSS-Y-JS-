@@ -1,13 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-}
-:root{
     font-family: 'Poppins', sans-serif;
 }
+
 body{
     background-color: rgb(242, 246, 250);
 }
+
+/* Inicio del header */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -28,3 +30,103 @@ img{
     padding-top: 0.2rem;
     background-color: rgb(117, 182, 194);
 }
+
+/* Fin del header */
+
+/* Inicio del header(tarjeta) */
+
+.hero{                    
+     display: flex;            
+    justify-content: center;
+   
+}
+.contenedorHero{    /* Creo contenedor para poder poner la imagen de fondo */
+    color: white;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,160,172,0.5802696078431373) 27%, rgba(59,111,121,1) 23%),url(./Imágenes/tarjeta.jpg);
+    border-radius: 6%;
+    width: 80%;
+    padding: 1rem 1rem;
+    display: flex;            
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+}
+/* El contenido del hero está dividido en dos secciones y 4 lineas */
+
+    /* primer sección */
+
+        /* primera linea */
+
+.primerLineaTarjeta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.nombreLogo{
+    display: flex;
+    align-items: center;
+    margin: 0 0.6rem
+}
+.nombreLogo>h2{font-size: 0.4rem;
+margin-right: 0.2rem;}
+.nombreLogo>i{font-size: 1rem;}
+
+/* Segunda linea */
+
+.saldo{                        
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    text-align: center;
+}
+::placeholder{
+    color:white;
+    font-size: 1rem;
+}
+
+/* segunda sección */
+
+    /* tercera linea */ 
+
+.tercerLinea{
+    word-spacing: 1rem;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    margin-left: 0.6rem;
+}
+
+        /* cuarta linea */
+
+.cuartaLinea{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    margin-left: 0.6rem;
+    width: 60%;
+    margin-top: 0.6rem;
+}
+
+
+/* contenedor botones */
+
+.contenedorBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.contenedorBtn>button{
+    padding: 0.6rem 0.2rem;
+    width: 30%;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+}
+.gastos{
+    background-color: rgb(67, 171, 181);
+color:white}
+
