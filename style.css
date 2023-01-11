@@ -7,57 +7,175 @@
 body{
     background-color: rgb(242, 246, 250);
 }
+ 
+                                          /* Inicio header */
+header{padding-top: 1.5rem;
+        margin-bottom: 1rem;}
 
-/* Inicio del header */
-
-header{
+header>h2{
+    text-align: center;
+   
+}
+.saludo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 1.5rem 1rem;
+    margin: 1rem;
 }
-h2{
+.saludo>h2{
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 2rem;
 }
-h1{
+.saludo>h1{
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 img{
-    width: 15%;
+    width: 8%;
     border-radius: 16%;
     padding-top: 0.2rem;
     background-color: rgb(117, 182, 194);
+} 
+
+                                        /* Inicio estados */
+
+.estados{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
 }
+
+
+.saldosImput{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(215, 216, 218);
+    width: 30%;
+    border-radius: 1.25rem;
+    padding: 1rem;
+}
+
+.saldosImput>input{
+    border-color: transparent;
+    background-color: transparent;
+    margin-left: 1rem;
+    
+}
+
+.saldosImput>label{
+    margin-left: 1rem;
+}
+ 
+                                                /* Inicio ingresos y gastos */
+
+.contenedorIngresoGastos{          /* Creo un contenedor para dividir la pantalla en dos en Desktop */
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+
+}
+.ingresos{
+    flex-basis: 50%;
+    background: linear-gradient(90deg, rgba(2,0,36,0.1) 0%, rgba(96,160,172,0.5802696078431373) 5%, rgba(59,111,121,0.6) 10%),url(./Imágenes/tarjeta.jpg);
+    color: white;
+}
+
+.ingresarDatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.ingresarDatos>input{
+    width: 60%;
+    background-color:rgba(236, 236, 236,0.1) ; 
+    padding: 1rem 3rem;
+    border-radius: 1.25rem;
+    border: none;
+    color: black;
+    font-weight:bold;
+    font-size: 1.6rem;
+}
+::placeholder{
+    color: white;
+}
+
+.contenedorBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.contenedorBtn>button{
+    padding: 0.6rem 0.2rem;
+    width: 20%;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+}
+.agregarGastos{
+    background-color: rgb(67, 171, 181);
+color:white} 
+
+
+.gastos{
+flex-basis: 50%;
+background-color: rgb(236, 236, 236);
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Inicio del header */
+
+
+/*
+
 
 /* Fin del header */
 
-/* Inicio del header(tarjeta) */
+/* Inicio de Ingresos (tarjeta) */
 
-.hero{                    
+/* .ingresos{                    
      display: flex;            
     justify-content: center;
+    height: 40%;
    
 }
-.contenedorHero{    /* Creo contenedor para poder poner la imagen de fondo */
-    color: white;
+.contenedorIngresos{  */   /* Creo contenedor para poder poner la imagen de fondo */
+    /* color: white;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,160,172,0.5802696078431373) 27%, rgba(59,111,121,1) 23%),url(./Imágenes/tarjeta.jpg);
-    border-radius: 6%;
     width: 80%;
+    border: 2px solid black;
+    width: 50%;
+    
     padding: 1rem 1rem;
     display: flex;            
     justify-content: center;
     flex-direction: column;
     align-content: space-around;
-}
+} */
 /* El contenido del hero está dividido en dos secciones y 4 lineas */
 
     /* primer sección */
 
         /* primera linea */
 
-.primerLineaTarjeta{
+/* .primerLineaTarjeta{
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -71,10 +189,10 @@ img{
 .nombreLogo>h2{font-size: 0.4rem;
 margin-right: 0.2rem;}
 .nombreLogo>i{font-size: 1rem;}
-
+ */
 /* Segunda linea */
 
-.saldo{                        
+/* .saldo{                        
     border-color: transparent;
     background-color: transparent;
     color: white;
@@ -86,22 +204,22 @@ margin-right: 0.2rem;}
 ::placeholder{
     color:white;
     font-size: 1rem;
-}
+} */
 
 /* segunda sección */
 
     /* tercera linea */ 
 
-.tercerLinea{
+/* .tercerLinea{
     word-spacing: 1rem;
     margin-top: 1.5rem;
     font-size: 0.8rem;
     margin-left: 0.6rem;
-}
+} */
 
         /* cuarta linea */
 
-.cuartaLinea{
+/* .cuartaLinea{
     display: flex;
     justify-content: space-between;
     font-size: 0.6rem;
@@ -110,23 +228,16 @@ margin-right: 0.2rem;}
     margin-top: 0.6rem;
 }
 
-
+ */
 /* contenedor botones */
 
-.contenedorBtn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-.contenedorBtn>button{
-    padding: 0.6rem 0.2rem;
-    width: 30%;
-    border-radius: 0.5rem;
-    border: 0.125rem solid transparent;
-}
-.gastos{
-    background-color: rgb(67, 171, 181);
-color:white}
+/* .
 
+
+
+/* Sección gastos */
+
+/* .contenedorGastos{
+    display: flex;
+    justify-content: space-around;
+} */

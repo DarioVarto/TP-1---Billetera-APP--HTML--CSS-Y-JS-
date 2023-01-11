@@ -10,56 +10,90 @@
     <title>Document</title>
 </head>
 <body>
-
-    <header>
-        <div>
-            <h2>Hola</h2>
-            <h1>Juan Perez</h1>
-        </div>
-    <img src="./Imágenes/img.avatar.png" alt="avatar">
-
+                <!-- Header contiene titulo, saludo y avatar --> 
+    <header>   
+        <h2>NomiBank <i class="bi bi-globe-americas"></i></h2>
+            <div class="saludo">
+                <div>
+                    <h2>Hola</h2>
+                    <h1>Juan Perez</h1>
+                </div>
+                <img src="./Imágenes/img.avatar.png" alt="avatar">
+            </div>
     </header>
 
-    <section class="hero">
+                    <!-- Barra de estados -->
 
-        <div class="contenedorHero"> <!-- El contenido del hero está dividido en dos secciones y 4 lineas -->
-            <div class="1y2Linea">
-                    <div class="primerLineaTarjeta">
-                        <h2>Datos de cuenta</h2>
-                        <div class="nombreLogo"><h2>NomiBank</h2><i class="bi bi-globe-americas"></i></div>
-            
-                    </div>
-
-            <!-- Segunda linea de tarjeta -->
-
-                    <input type="text" id="montoDisponible" class="saldo" required placeholder="Ingrese monto disponible">
-    
-            </div>
-                
-            <!-- Tercer linea de tarjeta -->
-         
-        <div class="3y4linea">   
-
-            <p class="tercerLinea"> 6219 8610 2888 8075</p>
-
-        <!-- Cuarta linea -->
-
-            <div class="cuartaLinea">
-                <h4>Juan S. Perez</h4>
-                <h4>12/25</h4>
-            </div>
+    <section class="estados">
+        <div class="saldosImput">
+            <label for="">Total ingresos</label>
+            <input type="text">
         </div>
-
-    </div>
+        <div class="saldosImput">
+            <label for="">Total gastos</label>
+            <input type="text">
+        </div>
+        <div class="saldosImput">
+            <label for="">Monto disponible</label>
+            <input type="text">
+        </div>
     </section>
-    <div class="contenedorBtn">
-        <button>Enviar</button>
-        <button class="gastos">Agregar gasto</button>
-        <button>Recibir</button>
-    </div>
 
+                        <!-- Creo un contenedor para dividir la pantalla en dos en Desktop --> 
+   
+    <div class="contenedorIngresoGastos">
+
+                        <!-- Ingresar datos -->
+        
+        <section class="ingresos">
+
+        
+                <div class="ingresarDatos">
+                    <label for="montoDisponible">Ingresos</label>
+                    <input type="text" id="montoDisponible" class="saldo" required placeholder="Ingrese monto disponible">
+                 </div>
+                 
+                 <div class="ingresarDatos">
+                    <label for="concepto">Concepto</label>
+                    <input type="text" id="concepto" class="saldo" required>
+                 </div>
+                 
+                 <div class="ingresarDatos">
+                    <label for="monto">Monto</label>
+                    <input type="text" id="monto" class="saldo" required>
+                 </div>
+
+                 <div class="contenedorBtn">
+                    <button>Enviar</button>
+                    <button class="agregarGastos">Agregar gasto</button>
+                    <button>Recibir</button>
+                </div>
+            
+        </section>
+
+        
+                                <!-- Lista de gastos -->
+
+        
+        <section class="gastos">
+                    <h2>Gastos</h2>
+                    <ul>
+         
+                    </ul>
+        </section>
+
+</div>
+    
+    
+    
+
+
+
+
+    
     
 
     <script src="app.js"></script>
 </body>
 </html>
+
