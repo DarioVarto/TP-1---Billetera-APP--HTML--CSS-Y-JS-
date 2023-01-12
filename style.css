@@ -20,7 +20,7 @@ header>h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 1.6rem;
+    margin: 1rem 1.3rem;
 }
 .contSaludo>h2{
     font-weight: 300;
@@ -161,6 +161,9 @@ text-align: center;
    ::placeholder{
     font-size: 1.2rem;
    }
+   .saludo{
+    margin:0 1rem;
+   }
 
 }
 
@@ -227,7 +230,19 @@ text-align: center;
         font-size: 1.2rem;}
         .ingresosInput{border-radius: 3%;
         margin: 0 0.5rem}
+    .saludo{
+        margin:1 0rem;
+    }
+    img{
+        width: 15%;
+    }
+    .contenedorIngresoGastos{
+        margin: 0 ;
+    }
 }
+@media(max-width:800px){
+    .saludo{ margin:0 0.6rem;}}
+
 
 @media(max-width:700px){
     .ingresarDatos>label{
@@ -268,6 +283,7 @@ text-align: center;
         .contSaludo>h1{
             font-size: 1.5rem;
         }
+        img{width: 18%;}
             
     }
 
@@ -285,6 +301,9 @@ text-align: center;
     .contSaludo>h1{
         
         font-size: 1rem;
+    }
+    .saludo{
+        margin:0 0.4rem;
     }
 
 }
