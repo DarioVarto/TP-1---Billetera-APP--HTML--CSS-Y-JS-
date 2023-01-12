@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
@@ -14,7 +14,7 @@
     <header>   
         <h2>NomiBank <i class="bi bi-globe-americas"></i></h2>
             <div class="saludo">
-                <div>
+                <div class="contSaludo">
                     <h2>Hola</h2>
                     <h1>Juan Perez</h1>
                 </div>
@@ -26,16 +26,19 @@
 
     <section class="estados">
         <div class="saldosImput">
-            <label for="">Total ingresos</label>
-            <input type="text">
+            <h3 class="est">Total ingresos</h3>
+            <h3 class="estadosMq">Ingresos</h3>
+            <p class="ingresos" id="ing">123546</p>
         </div>
         <div class="saldosImput">
-            <label for="">Total gastos</label>
-            <input type="text">
+            <h3 class="est">Total gastos</h3>
+            <h3 class="estadosMq">Gastos</h3>
+            <p  id="misGastos">1235465</p>
         </div>
         <div class="saldosImput">
-            <label for="">Monto disponible</label>
-            <input type="text">
+            <h3 class="est">Monto disponible</h3>
+            <h3 class="estadosMq">Disonible</h3>
+            <p class="disponible" id="misMontos">5+65+65+</p>
         </div>
     </section>
 
@@ -45,7 +48,7 @@
 
                         <!-- Ingresar datos -->
         
-        <section class="ingresos">
+        <div class="ingresosInput">
 
         
                 <div class="ingresarDatos">
@@ -58,7 +61,7 @@
                     <input type="text" id="concepto" class="saldo" required>
                  </div>
                  
-                 <div class="ingresarDatos">
+                 <div class="ingresarDatos monto">
                     <label for="monto">Monto</label>
                     <input type="text" id="monto" class="saldo" required>
                  </div>
@@ -66,21 +69,24 @@
                  <div class="contenedorBtn">
                     <button>Enviar</button>
                     <button class="agregarGastos">Agregar gasto</button>
+                    <button class="agregarMq">Agregar</button>
                     <button>Recibir</button>
+                  
+                    
                 </div>
             
-        </section>
+            </div>
 
         
                                 <!-- Lista de gastos -->
 
         
-        <section class="gastos">
+        <div class="gastos">
                     <h2>Gastos</h2>
                     <ul>
-         
+                        
                     </ul>
-        </section>
+                </div>
 
 </div>
     
