@@ -28,17 +28,17 @@
         <div class="saldosImput">
             <h3 class="est">Total ingresos</h3>
             <h3 class="estadosMq">Ingresos</h3>
-            <p class="ingresos" id="ing">123546</p>
+            <p class="ingresos" id="ing"></p>
         </div>
         <div class="saldosImput">
             <h3 class="est">Total gastos</h3>
             <h3 class="estadosMq">Gastos</h3>
-            <p  id="misGastos">1235465</p>
+            <p  id="misGastos"></p>
         </div>
         <div class="saldosImput">
             <h3 class="est">Monto disponible</h3>
             <h3 class="estadosMq">Disonible</h3>
-            <p class="disponible" id="misMontos">5+65+65+</p>
+            <p class="disponible" id="misMontos"></p>
         </div>
     </section>
 
@@ -53,24 +53,24 @@
         
                 <div class="ingresarDatos">
                     <label for="montoDisponible">Ingresos</label>
-                    <input type="text" id="montoDisponible" class="saldo" required placeholder="Ingrese monto disponible">
+                    <input type="number" id="montoDisponible" class="saldo" required placeholder="Total de ingresos">
                  </div>
                  
                  <div class="ingresarDatos">
                     <label for="concepto">Concepto</label>
-                    <input type="text" id="concepto" class="saldo" required>
+                    <input type="text" id="concepto" class="saldo">
                  </div>
                  
                  <div class="ingresarDatos monto">
                     <label for="monto">Monto</label>
-                    <input type="text" id="monto" class="saldo" required>
+                    <input type="text" id="monto" class="saldo">
                  </div>
 
                  <div class="contenedorBtn">
                     <button>Enviar</button>
-                    <button class="agregarGastos">Agregar gasto</button>
-                    <button class="agregarMq">Agregar</button>
-                    <button>Recibir</button>
+                    <button class="agregarGastos" id="btnGastos">Agregar gasto</button>
+                    <button class="agregarMq" id="btnGastos">Agregar</button>
+                    <button id="btnIngresos">Ingresar </button>
                   
                     
                 </div>
@@ -83,7 +83,7 @@
         
         <div class="gastos">
                     <h2>Gastos</h2>
-                    <ul>
+                    <ul id="listaGastos">
                         
                     </ul>
                 </div>

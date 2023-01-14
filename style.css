@@ -61,6 +61,13 @@ img{
     font-size: 1.5rem; 
     color: rgb(255, 98, 17);   
 }
+/* Código copiado de la web para ocultar las flechas del input number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 
 .saldosImput>h3{
     margin-left: 1rem;
@@ -70,6 +77,7 @@ img{
 #misMontos{color:rgb(0, 144, 85);
     margin-left: 1rem;
 }
+.contI{display: flex;}
                                                 /* Inicio ingresos y gastos */
 
 .contenedorIngresoGastos{          /* Creo un contenedor para dividir la pantalla en dos en Desktop */
@@ -132,6 +140,13 @@ color:white}
 flex-basis: 50%;
 background-color: rgb(236, 236, 236);
 text-align: center;
+}
+
+li{
+    list-style-type:none;
+    word-spacing: 10rem;
+    font-size: 2rem;
+
 }
 
 
