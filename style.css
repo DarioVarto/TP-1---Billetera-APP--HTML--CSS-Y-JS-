@@ -58,9 +58,12 @@ img{
 .saldosImput>p{
     margin-left: 1rem;
     font-weight: 900;
-    font-size: 1.5rem; 
-    color: rgb(255, 98, 17);   
+    font-size: 1.5rem;   
 }
+
+#misGastos{color: rgb(255, 98, 17);}
+
+#ing{color:black}
 /* Código copiado de la web para ocultar las flechas del input number */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
