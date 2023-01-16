@@ -1,4 +1,4 @@
-"use strict"
+
 
 let montoDisponible=document.getElementById('montoDisponible') //Ingresos
 
@@ -17,6 +17,13 @@ let monto=document.getElementById('monto')//monto
 let listaGastos=document.getElementById('listaGastos')//ul gastos
 
 let btnGastosMq=document.getElementById('btnGastosMq')
+
+let btnEliminar = document.getElementsByClassName('eliminar')
+
+
+
+
+
 
 let gastoActualizado=0
 
@@ -75,7 +82,7 @@ let monto=Number(document.getElementById('monto').value)
 
 let listaGastos=document.getElementById('listaGastos')
 
-listaGastos.innerHTML+= `<li>${concepto} ${monto} <i class="bi bi-trash3-fill" id="eliminarGasto"></i></li>`
+listaGastos.innerHTML+= `<li id="eg">${concepto} <span id="supGasto">${monto}</span> <Button class="eliminar"><i class="bi bi-trash3-fill " ></i></Button></li> `
 
 
 
@@ -86,12 +93,66 @@ misGastos.innerHTML=`$${gastoActualizado}`
 
 montoActualizado=Number(montoActualizado)-Number(monto)
 
-misMontos.innerHTML=montoActualizado
+misMontos.innerHTML=`$<span class=misMonts>${montoActualizado}</span>`
 
+if(montoActualizado<0){misMontos.style.color="red"}
+
+
+return montoActualizado
 
 }
 
 
+const eliminarLi = () => {console.log('Hola') }
+
 btnGastos.addEventListener('click',ingresoGastos)
 
 btnGastosMq.addEventListener('click',ingresoGastos)//Botón de Media Queries
+
+
+
+listaGastos.addEventListener('click',(event)=>{
+    
+    let eg=document.getElementById('eg')
+
+    let supGasto=Number(document.getElementById('supGasto').value)
+    
+     eg.remove()
+
+     
+   console.log(montoActualizado)
+
+  
+
+   console.log(supGasto)
+
+
+
+
+     //let misMontos=document.getElementById(Number('misMontos'))//Dinero disponible
+
+     //let resultado = misMontos+number
+
+     //console.log(resultado)
+
+    /*  misMontos.innerHTML = `${resultado}` */
+     
+
+}
+
+
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
