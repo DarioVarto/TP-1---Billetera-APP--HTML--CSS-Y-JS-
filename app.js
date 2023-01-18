@@ -12,7 +12,7 @@ let btnIngresos=document.getElementById('btnIngresos')//Boton ingresos
 
 let concepto=document.getElementById('concepto')//concepto
 
-let monto=document.getElementById('monto')//monto
+let monto=Number(document.getElementById('monto').value)//monto
 
 let listaGastos=document.getElementById('listaGastos')//ul gastos
 
@@ -20,7 +20,7 @@ let btnGastosMq=document.getElementById('btnGastosMq')
 
 let btnEliminar = document.getElementsByClassName('eliminar')
 
-
+let array = []
 
 
 
@@ -29,7 +29,7 @@ let gastoActualizado=0
 
 let montoActualizado=0
 
-
+                                                        //Función ingreso
 
 const ingreso = () => {
 
@@ -54,7 +54,9 @@ const ingreso = () => {
 
 }
 
-//Función para anular nueva vuelta de ingresos
+                                                        //Función para anular nueva vuelta de ingresos
+
+
 
 const dsb = () => {montoDisponible.setAttribute("disabled", true)
 montoDisponible.setAttribute("placeholder", "")
@@ -67,11 +69,47 @@ btnIngresos.addEventListener('click',ingreso)
 
 btnIngresos.addEventListener('click',dsb)
 
-/* btnIngresos.addEventListener('click',dsb) */
+                                                    //Agregar gastos
 
 
 
 let btnGastos=document.getElementById('btnGastos')
+
+
+
+    
+
+
+    
+   /*  montoActualizado=montoActualizado+valor
+    montoActualizado.innerHTML=montoActualizado */
+
+
+    
+            
+    
+    
+    
+    
+    
+
+  /*   montoActualizado=Number(montoActualizado)+Number(monto)
+    
+   
+
+    misMontos.innerHTML=montoActualizado
+
+   gastoActualizado= Number(gastoActualizado)-Number(monto) 
+   
+   gastoActualizado.innerHTML=gastoActualizado */
+
+    
+        
+
+
+
+
+   
 
 
 const ingresoGastos = () => { 
@@ -82,28 +120,52 @@ let monto=Number(document.getElementById('monto').value)
 
 let listaGastos=document.getElementById('listaGastos')
 
-listaGastos.innerHTML+= `<li id="eg">${concepto} <span id="supGasto">${monto}</span> <Button class="eliminar"><i class="bi bi-trash3-fill " ></i></Button></li> `
+listaGastos.innerHTML+= `<li id="eg">${concepto} <span id="supGasto">${monto}</span> <Button id="eliminar"><i class="bi bi-trash3-fill " ></i></Button></li> `
+
+
+let eliminar=document.getElementById("eliminar")
+
+
+
+}
+
+eliminar.addEventListener('click',eliminarLi)
+
+const eliminarLi = () => {
+
+    let valorEliminar = document.getElementById('supGasto')
+   
+    let valor = Number(valorEliminar.innerHTML)
+   
+    let eg=document.getElementById('eg')
+   
+   eg.remove()}
+   
+
+/* if(true){
 
 
 
 gastoActualizado= Number(gastoActualizado)+Number(monto)
 
-
 misGastos.innerHTML=`$${gastoActualizado}`
 
 montoActualizado=Number(montoActualizado)-Number(monto)
 
+
 misMontos.innerHTML=`$<span class=misMonts>${montoActualizado}</span>`
 
 if(montoActualizado<0){misMontos.style.color="red"}
+} */
+
+/* listaGastos.addEventListener('click',eliminarLi) */
 
 
-return montoActualizado
-
-}
 
 
-const eliminarLi = () => {console.log('Hola') }
+
+
+
 
 btnGastos.addEventListener('click',ingresoGastos)
 
@@ -111,20 +173,48 @@ btnGastosMq.addEventListener('click',ingresoGastos)//Botón de Media Queries
 
 
 
-listaGastos.addEventListener('click',(event)=>{
+
+
+   /*  if(true){
+        
     
-    let eg=document.getElementById('eg')
-
-    let supGasto=Number(document.getElementById('supGasto').value)
+        resultado=montoActualizado+valor
     
-     eg.remove()
+        resultado2=gastoActualizado-valor
+        misMontos.innerHTML=`$${resultado}`
+    
+        misGastos.innerHTML=`$${resultado2}`
+    } */
 
-     
-   console.log(montoActualizado)
 
-  
 
-   console.log(supGasto)
+
+
+
+
+
+
+
+
+
+/* const actualizar = (parametro) => { 
+{
+    montoActualizado=Number(montoActualizado)+Number(monto)
+
+misMontos.innerHTML=`$<span class=misMonts>${montoActualizado}</span>`
+}
+}
+   */
+
+    
+/*     listaGastos.addEventListener('click',actualizar) */
+
+
+ 
+
+   /*  let supGasto=document.getElementsByClassName(Number('supGasto').value) */
+
+   
 
 
 
@@ -138,11 +228,16 @@ listaGastos.addEventListener('click',(event)=>{
     /*  misMontos.innerHTML = `${resultado}` */
      
 
-}
+/* }
 
 
-)
+) */
 
+/* if(listaGastos.addEventListener('click',eliminarLi)){
+
+    montoActualizado=Number(montoActualizado)+Number(monto)
+
+misMontos.innerHTML=`$<span class=misMonts>${montoActualizado}</span>`} */
 
 
 
