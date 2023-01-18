@@ -31,7 +31,7 @@ const ingFijo = () => {
     
         ingresosFijo.innerHTML=`$${inputIngreso}`
     
-
+   
     }
  
 
@@ -81,12 +81,13 @@ listaGastos.innerHTML+=`<li class="liGasto">
 disponible=disponible-monto
 gastos=Number(gastos)+monto
 
-if(disponible<0){misMontos.style.color="red"}
+
 
 misMontos.innerHTML=`$${disponible}`
 
 misGastos.innerHTML=`$${gastos}`
 
+if(disponible<0){misMontos.style.color="red"}
 
 
 
