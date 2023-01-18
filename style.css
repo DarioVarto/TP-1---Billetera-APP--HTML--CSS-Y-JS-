@@ -136,9 +136,11 @@ input[type=number]::-webkit-outer-spin-button {
 .agregarGastos{
     background-color: rgb(67, 171, 181);
 color:white} 
+
 .agregarMq{display: none;}
 
-
+button:hover{transform: scale(1.1);} 
+button{cursor: pointer;}
 .gastos{
 flex-basis: 50%;
 background-color: rgb(236, 236, 236);
