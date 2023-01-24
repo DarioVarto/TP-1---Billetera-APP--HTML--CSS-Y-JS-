@@ -151,18 +151,18 @@ li{
     list-style-type:none;
     word-spacing: 10rem;
     font-size: 2rem;
-  
-
-
+    display: flex;
+    justify-content: space-between;
+   
 }
+
 i{
     background-color: transparent;
     border: 2px solid transparent;
     font-size: 1.5rem;
     cursor: pointer;
 }
-
-
+.concepto{margin-left: 1rem;}
 
  @media(max-width:1600px){
     ::placeholder{

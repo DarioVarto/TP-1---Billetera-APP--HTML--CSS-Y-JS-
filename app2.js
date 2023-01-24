@@ -30,6 +30,7 @@ const ingFijo = () => {
     
     
         ingresosFijo.innerHTML=`$${inputIngreso}`
+        
     
    
     }
@@ -68,7 +69,7 @@ let monto=Number(document.getElementById('monto').value)
 
 
 listaGastos.innerHTML+=`<li class="liGasto">
-                        ${concepto}    
+                        <span class="concepto">${concepto}</span>    
                         <span id="supGasto">${monto}</span>
 
                         <Button class="eliminar" id="${concepto}">
@@ -76,7 +77,7 @@ listaGastos.innerHTML+=`<li class="liGasto">
                             <i class="bi bi-trash3-fill"></i>
                         
                         </Button></li>`
-
+listaGastos.style.animation="aparecer 2s"
 
 disponible=disponible-monto
 gastos=Number(gastos)+monto
@@ -87,7 +88,7 @@ misMontos.innerHTML=`$${disponible}`
 
 misGastos.innerHTML=`$${gastos}`
 
-if(disponible<0){misMontos.style.color="red"}
+if(disponible<0){misMontos.style.color="red"}else{misMontos.style.color="rgb(0, 144, 85)"}
 
 
 
@@ -112,6 +113,7 @@ const eliminarLi = (btnEliminar) => {  //Función eliminar li
     misMontos.innerHTML=`$${disponible}`
     gastos=gastos-span         //Actualización gasto luego de eliminar <li>
     misGastos.innerHTML=`$${gastos}`
+    if(disponible<0){misMontos.style.color="red"}else{misMontos.style.color="rgb(0, 144, 85)"}
   }
 
  listaGastos.addEventListener('click',(event)=>{         //Traigo el evento hacia la ul
@@ -128,7 +130,9 @@ const eliminarLi = (btnEliminar) => {  //Función eliminar li
  const dsb = () => {montoDisponible.setAttribute("disabled", true)
  montoDisponible.setAttribute("placeholder", "")
  
- montoDisponible.value=""}
+ montoDisponible.value=""
+ btnIngreso.setAttribute("disabled",true)
+}
 
  btnIngresos.addEventListener('click',dsb)
 
