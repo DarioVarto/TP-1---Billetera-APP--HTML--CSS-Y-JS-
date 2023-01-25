@@ -162,7 +162,15 @@ i{
     font-size: 1.5rem;
     cursor: pointer;
 }
-.concepto{margin-left: 1rem;}
+.concepto{margin-left: 1rem;
+width: 20%;}
+.supGasto{width: 20%;}
+.eliminar{
+    margin-right: 1rem;
+    border-color: transparent;
+}
+
+
 
  @media(max-width:1600px){
     ::placeholder{
@@ -242,14 +250,14 @@ i{
         margin-top: 1rem;
         width: 20%;
         margin-bottom: 1rem;
+        padding: 0.2rem 0.1rem;
+        margin: 2px;
+        font-size: 0.8rem;
     }
     .ingresarDatos{
               margin: 1rem;
     }
-    .contenedorBtn>button{
-        padding: 0.2rem 0.1rem;
-        margin: 2px;
-        font-size: 0.8rem;
+    
     }
     .saldosImput{
         width: 30%;
@@ -267,7 +275,7 @@ i{
     .contenedorIngresoGastos{
         margin: 0 ;
     }
-}
+
 @media(max-width:800px){
     .saludo{ margin:0 0.6rem;}}
 
