@@ -18,26 +18,6 @@ let inputIngreso=Number(document.getElementById('montoDisponible').value)
 
 
 
-
-
-
-const ingFijo = () => {
-
-
- 
-        let inputIngreso=Number(document.getElementById('montoDisponible').value) 
-    
-    
-    
-        ingresosFijo.innerHTML=`$${inputIngreso}`
-        
-    
-   
-    }
- 
-
-
-
 const montDis = () => {
 
     
@@ -47,10 +27,10 @@ const montDis = () => {
     misMontos.innerHTML=`$${disponible}`
     gastos=Number(0)
     misGastos.innerHTML=`$${gastos}`
+    ingresosFijo.innerHTML=`$${inputIngreso}`
  }
  
 
- btnIngreso.addEventListener('click',ingFijo)
  btnIngreso.addEventListener('click',montDis)
 
 
